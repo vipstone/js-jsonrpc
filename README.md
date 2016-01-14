@@ -35,4 +35,4 @@ var jsonrpc = require('js-jsonrpc');
 jsonrpc.callByCustom("服务代理url","应用.服务","方法名", "参数", function (err,result) {
     //console.log(result);
 });
-``
+```
