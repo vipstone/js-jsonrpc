@@ -23,7 +23,7 @@ jsonrpc.setApp("appName.serviceName");
 ## 2、代码服务调用
 ```sh
 var jsonrpc = require('js-jsonrpc');
-jsonrpc.call("method", params, function (result) {
+jsonrpc.call("method", params, function (err,result) {
     //console.log(result);
 });
 ```
@@ -32,7 +32,7 @@ jsonrpc.call("method", params, function (result) {
 ## 高级调用
 ```sh
 var jsonrpc = require('js-jsonrpc');
-jsonrpc.callByCustom("服务代理url","应用.服务","方法名", "参数", function (result) {
+jsonrpc.callByCustom("服务代理url","应用.服务","方法名", "参数", function (err,result) {
     //console.log(result);
 });
 ``
