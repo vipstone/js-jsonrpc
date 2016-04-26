@@ -1,6 +1,6 @@
 {
   "name": "js-jsonrpc",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "```sh\r npm install js-jsonrpc\r ```",
   "main": "index.js",
   "dependencies": {
