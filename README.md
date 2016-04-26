@@ -17,7 +17,7 @@ npm install js-jsonrpc
 ```sh
 var jsonrpc = require('js-jsonrpc');
 jsonrpc.setUrl("http://192.168.20.30:8080/json.rpc");
-jsonrpc.setApp("appName.serviceName");
+jsonrpc.setService("userCenter");
 ```
 
 ## 2、代码服务调用
@@ -32,7 +32,7 @@ jsonrpc.call("method", params, function (err,result) {
 ## 高级调用
 ```sh
 var jsonrpc = require('js-jsonrpc');
-jsonrpc.callByCustom("服务代理url","应用.服务","方法名", "参数", function (err,result) {
+jsonrpc.callByCustom("服务代理url","服务名称","方法名", "参数", function (err,result) {
     //console.log(result);
 });
 ```
